@@ -1,0 +1,52 @@
+
+
+1. Can we put duplicate values in the set object?
+
+
+No, the set object in JavaScript does not allow 
+duplicate values. The set object is designed 
+to store unique values, and any attempt to insert
+a duplicate value will be ignored. 
+This makes sets an ideal data structure 
+for tasks that require the storage and 
+manipulation of unique values, such as finding 
+the unique elements in an array.
+
+2. Write the syntax for
+
+a) Creating new set object
+
+    var set = new Set();
+
+
+b) Adding new element to set object
+
+    set.add(element);
+
+
+c) Deleting element from set object
+
+    set.delete(element);
+
+
+3. Create a set object with four random numbers 
+from 0 to 10. Check if this newly 
+created set object has 8 in it. 
+Use set object methods.
+
+
+var set = new Set();
+
+// Adding four random numbers to the set object
+while (set.size < 4) {
+  set.add(Math.floor(Math.random() * 11));
+}
+
+// Checking if the set object has the number 8
+if (set.has(8)) {
+  console.log("The set object has the number 8 in it");
+} else {
+  console.log("The set object does not have the number 8 in it");
+}
+
+
